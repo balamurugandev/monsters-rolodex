@@ -18,10 +18,10 @@ const App = () => {
     const newFiltereMonsters = monsters.filter((monster) => {
       return monster.name.toLocaleLowerCase().includes(searchField);
     });
-
     setFilteredMonsters(newFiltereMonsters);
   },[monsters, searchField]);
      
+
   const onSearchChange = (event) => {
     const searchFieldString = event.target.value.toLocaleLowerCase(); 
     setSearchField(searchFieldString);
